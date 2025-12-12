@@ -1,0 +1,22 @@
+companyName,symbol,price,marketCap,sector,industry
+Apple Inc.,AAPL,277.811,4105033403283.0005,Technology,Consumer Electronics
+Alphabet Inc.,GOOG,313.61,3784529752892.0,Technology,Internet Content & Information
+NVIDIA Corporation,NVDA,180.2258,4387957537820.9995,Technology,Semiconductors
+"Tesla, Inc.",TSLA,445.69,1435251744485.0,Consumer Cyclical,Auto - Manufacturers
+Microsoft Corporation,MSFT,483.51,3593934563563.0005,Technology,Software - Infrastructure
+"Amazon.com, Inc.",AMZN,229.4099,2452306391642.0,Consumer Cyclical,Specialty Retail
+Oracle Corporation,ORCL,199.43,563196360735.0,Technology,Software - Infrastructure
+"Advanced Micro Devices, Inc.",AMD,220.72,358232383312.0,Technology,Semiconductors
+Intel Corporation,INTC,39.31,172881829678.0,Technology,Semiconductors
+"Confluent, Inc.",CFLT,30.12,10536588370.0,Technology,Software - Infrastructure
+"Cloudflare, Inc.",NET,207.27,72600302680.0,Technology,Software - Infrastructure
+"Riot Platforms, Inc.",RIOT,15.6999,5834453138.0,Financial Services,Financial - Capital Markets
+Walmart Inc.,WMT,115.635,921940610352.0,Consumer Defensive,Discount Stores
+Target Corporation,TGT,96.79,43981292277.0,Consumer Defensive,Discount Stores
+Toyota Motor Corporation,TM,203.645,265418358650.0,Consumer Cyclical,Auto - Manufacturers
+Bank of America Corporation,BAC,54.6,398716732978.0,Financial Services,Banks - Diversified
+"The Goldman Sachs Group, Inc.",GS,914.35,286849902116.0,Financial Services,Financial - Capital Markets
+JPMorgan Chase & Co.,JPM,317.58,864536059646.0,Financial Services,Banks - Diversified
+"Salesforce, Inc.",CRM,262.1,250565199164.0,Technology,Software - Application
+Infosys Limited,INFY,17.815,73852670502.0,Technology,Information Technology Services
+"Nintendo Co., Ltd.",NTDOY,18.6,86620183093.0,Technology,Electronic Gaming & Multimedia

@@ -1,0 +1,86 @@
+"start_date" : "2020-01-01"
+"end_date" : "2025-12-09"
+
+"tickers":
+  - "AAPL"
+  - "GOOG"
+  - "NVDA"
+  - "TSLA"
+  - "MSFT"
+  - "AMZN"
+  - "ORCL"
+  - "AMD"
+  - "INTC"
+  - "CFLT"
+  - "NET"
+  - "RIOT"
+  - "WMT"
+  - "TGT"
+  - "TM"
+  - "BAC"
+  - "GS"
+  - "JPM"
+  - "CRM"
+  - "INFY"
+  - "NTDOY"
+
+"meta_keys" :
+  - "companyName"
+  - "symbol"
+  - "price"
+  - "marketCap"
+  - "sector"
+  - "industry"
+
+"dbname":
+  - "bronze"
+  - "silver"
+  - "gold"
+"user_name": "devuser"
+"host" : "127.0.0.1"
+"port" : "3306"
+
+
+"ohclv_root" : "data/historic/ohclv_historic"
+
+"meta_data_root" : "data/historic/meta_data_historic"
+
+"macro_data_root" : "data/historic/macro_data_historic"
+
+"exchange_rate_root" : "data/historic/exchange_data_historic"
+
+"fmp_end_point" : "https://financialmodelingprep.com/stable/profile?symbol="
+
+"frank_exchange_end_point" : "https://api.frankfurter.dev/v1/{start_date}..?base=USD&symbols=INR"
+
+"macro_variables" :
+  - "countryname"
+  - "id"
+  - "year"
+  - "nGDP"
+  - "rGDP"
+  - "infl"
+  - "unemp"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

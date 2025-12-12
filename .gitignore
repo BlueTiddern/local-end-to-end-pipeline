@@ -1,0 +1,11 @@
+# Ignore the environment directory
+.venv/
+
+# Ignore the log files directory
+logs/
+
+# Ignore environment variables
+.env
+
+# Ignore test file
+test.py

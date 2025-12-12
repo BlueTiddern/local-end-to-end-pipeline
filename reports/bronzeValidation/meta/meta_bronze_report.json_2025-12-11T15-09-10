@@ -1,0 +1,413 @@
+{
+    "success": true,
+    "results": [
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_value_lengths_to_be_between",
+                "kwargs": {
+                    "batch_id": "meta_bronze-meta_bronze",
+                    "column": "company_name",
+                    "min_value": 1,
+                    "max_value": 200
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 21,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "batch_id": "meta_bronze-meta_bronze",
+                    "column": "company_name"
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 21,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": []
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_match_regex",
+                "kwargs": {
+                    "batch_id": "meta_bronze-meta_bronze",
+                    "column": "company_name",
+                    "regex": "^(?=.{1,200}$)[A-Za-z0-9,.\\-& ]+$"
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 21,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "batch_id": "meta_bronze-meta_bronze",
+                    "column": "ticker"
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 21,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": []
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_value_lengths_to_be_between",
+                "kwargs": {
+                    "batch_id": "meta_bronze-meta_bronze",
+                    "column": "ticker",
+                    "min_value": 1,
+                    "max_value": 7
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 21,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_match_regex",
+                "kwargs": {
+                    "batch_id": "meta_bronze-meta_bronze",
+                    "column": "ticker",
+                    "regex": "^[A-Z0-9]{1,7}$"
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 21,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "batch_id": "meta_bronze-meta_bronze",
+                    "column": "price",
+                    "min_value": 0.0,
+                    "strict_min": true
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 21,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "batch_id": "meta_bronze-meta_bronze",
+                    "column": "market_cap"
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 21,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": []
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "batch_id": "meta_bronze-meta_bronze",
+                    "column": "market_cap",
+                    "min_value": 0.0
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 21,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "batch_id": "meta_bronze-meta_bronze",
+                    "column": "sector"
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 21,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": []
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_be_in_set",
+                "kwargs": {
+                    "batch_id": "meta_bronze-meta_bronze",
+                    "column": "sector",
+                    "value_set": [
+                        "Technology",
+                        "Consumer Cyclical",
+                        "Financial Services",
+                        "Consumer Defensive"
+                    ]
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 21,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "batch_id": "meta_bronze-meta_bronze",
+                    "column": "industry"
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 21,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": []
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_be_in_set",
+                "kwargs": {
+                    "batch_id": "meta_bronze-meta_bronze",
+                    "column": "industry",
+                    "value_set": [
+                        "Consumer Electronics",
+                        "Internet Content & Information",
+                        "Semiconductors",
+                        "Auto - Manufacturers",
+                        "Software - Infrastructure",
+                        "Specialty Retail",
+                        "Financial - Capital Markets",
+                        "Discount Stores",
+                        "Banks - Diversified",
+                        "Software - Application",
+                        "Information Technology Services",
+                        "Electronic Gaming & Multimedia"
+                    ]
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 21,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        }
+    ],
+    "suite_name": "bronze_meta_data_suit",
+    "suite_parameters": {},
+    "statistics": {
+        "evaluated_expectations": 13,
+        "successful_expectations": 13,
+        "unsuccessful_expectations": 0,
+        "success_percent": 100.0
+    },
+    "meta": {
+        "great_expectations_version": "1.9.1",
+        "expectation_suite_name": "bronze_meta_data_suit",
+        "run_id": {
+            "run_name": null,
+            "run_time": "2025-12-11T15:09:10.229880-06:00"
+        },
+        "batch_spec": {
+            "type": "table",
+            "data_asset_name": "meta_bronze",
+            "table_name": "bronze.company_meta_data_bronze",
+            "schema_name": null,
+            "batch_identifiers": {}
+        },
+        "batch_markers": {
+            "ge_load_time": "20251211T210909.920051Z"
+        },
+        "active_batch_definition": {
+            "datasource_name": "meta_bronze",
+            "data_connector_name": "fluent",
+            "data_asset_name": "meta_bronze",
+            "batch_identifiers": {}
+        },
+        "validation_time": "20251211T210910.229836Z",
+        "checkpoint_name": null
+    },
+    "id": null
+}

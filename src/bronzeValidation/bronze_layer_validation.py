@@ -6,6 +6,7 @@ import argparse
 import logging
 import os
 import datetime as dt
+from ..logger import setup_logging
 
 # loading environment variables
 load_dotenv(dotenv_path=".env")
@@ -18,19 +19,14 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--bulk", default = "config/bulk.yaml")
 args = parser.parse_args()
 
-# setup custom logger
-logger = logging.getLogger("validations")
-logger.setLevel(logging.INFO)
-handler = logging.FileHandler("logs/validations/bronze/bronze_validation.log")
-formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-handler.setLevel(logging.INFO)
-handler.setFormatter(formatter)
-logger.addHandler(handler)
-
 def bronze_layer_validation():
 
     # start time
     runtime_start = dt.datetime.now()
+
+    # logging module setup
+    setup_logging()
+    logger = logging.getLogger('bronze-validation')
 
     logger.info("Starting Bronze layer wide validation....")
     logger.info("Starting a connection to Bronze DB for MySql source....")

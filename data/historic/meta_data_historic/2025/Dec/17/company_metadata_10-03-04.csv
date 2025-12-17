@@ -1,0 +1,23 @@
+companyName,symbol,price,marketCap,sector,industry
+Apple Inc.,AAPL,274.89,4061871676170.0,Technology,Consumer Electronics
+American Airlines Group Inc.,AAL,15.815,10439228112.0,Industrials,"Airlines, Airports & Air Services"
+Alphabet Inc.,GOOG,299.5,3614255479708.0,Technology,Internet Content & Information
+NVIDIA Corporation,NVDA,171.43,4173806486002.0,Technology,Semiconductors
+"Tesla, Inc.",TSLA,477.73,1538429886003.0,Consumer Cyclical,Auto - Manufacturers
+Microsoft Corporation,MSFT,476.67,3543092776599.0005,Technology,Software - Infrastructure
+"Amazon.com, Inc.",AMZN,223.66,2390842102083.0,Consumer Cyclical,Specialty Retail
+Oracle Corporation,ORCL,177.7,501830173915.0,Technology,Software - Infrastructure
+"Advanced Micro Devices, Inc.",AMD,201.235,326607890793.0,Technology,Semiconductors
+Intel Corporation,INTC,36.47,160391771544.0,Technology,Semiconductors
+"Confluent, Inc.",CFLT,30.025,10503355438.0,Technology,Software - Infrastructure
+"Cloudflare, Inc.",NET,194.76,68218434651.0,Technology,Software - Infrastructure
+"Riot Platforms, Inc.",RIOT,13.445,4996479114.0,Financial Services,Financial - Capital Markets
+Walmart Inc.,WMT,115.9231,924237637955.0,Consumer Defensive,Discount Stores
+Target Corporation,TGT,96.15,43690476830.0,Consumer Defensive,Discount Stores
+Toyota Motor Corporation,TM,215.32,280634835054.0,Consumer Cyclical,Auto - Manufacturers
+Bank of America Corporation,BAC,54.92,401053534344.0,Financial Services,Banks - Diversified
+"The Goldman Sachs Group, Inc.",GS,877.76,275370886511.0,Financial Services,Financial - Capital Markets
+JPMorgan Chase & Co.,JPM,316.44,861432680630.0,Financial Services,Banks - Diversified
+"Salesforce, Inc.",CRM,260.12,248672337301.0,Technology,Software - Application
+Infosys Limited,INFY,17.875,74121274585.0,Technology,Information Technology Services
+Sony Group Corporation,SONY,26.121,156129059869.0,Technology,Consumer Electronics

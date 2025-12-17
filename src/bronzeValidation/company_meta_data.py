@@ -10,6 +10,7 @@ import great_expectations as gx
 import json
 from great_expectations.exceptions import GreatExpectationsError
 from sqlalchemy.exc import SQLAlchemyError
+from ..logger import setup_logging
 
 # loading environment variables
 load_dotenv(dotenv_path=".env")
@@ -22,19 +23,14 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--bulk", default = "config/bulk.yaml")
 args = parser.parse_args()
 
-# setup custom logger
-logger = logging.getLogger("validations")
-logger.setLevel(logging.INFO)
-handler = logging.FileHandler("logs/validations/bronze/bronze_validation.log")
-formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-handler.setLevel(logging.INFO)
-handler.setFormatter(formatter)
-logger.addHandler(handler)
-
 # great expectations context
 context = gx.get_context(mode = 'ephemeral')
 
 def bronze_company_meta_data_validation():
+
+    # logging module setup
+    setup_logging()
+    logger = logging.getLogger('bronze-validation')
 
     # --------------------------
     # Allowed value sets for sector and industry

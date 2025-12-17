@@ -1,0 +1,22 @@
+companyName,symbol,price,marketCap,sector,industry
+Apple Inc.,AAPL,275.5,4070885251500,Technology,Consumer Electronics
+Alphabet Inc.,GOOG,300.98,3632115573564,Technology,Internet Content & Information
+NVIDIA Corporation,NVDA,173.84,4232482759882,Technology,Semiconductors
+"Tesla, Inc.",TSLA,490.75,1580358082089,Consumer Cyclical,Auto - Manufacturers
+Microsoft Corporation,MSFT,477.05,3545917320320,Technology,Software - Infrastructure
+"Amazon.com, Inc.",AMZN,224.1417,2395991295683,Consumer Cyclical,Specialty Retail
+Oracle Corporation,ORCL,179.48,506856956449,Technology,Software - Infrastructure
+"Advanced Micro Devices, Inc.",AMD,205.29,333189226033,Technology,Semiconductors
+Intel Corporation,INTC,37.325,164151982311,Technology,Semiconductors
+"Confluent, Inc.",CFLT,30.005,10496359032,Technology,Software - Infrastructure
+"Cloudflare, Inc.",NET,197.47,69167664256,Technology,Software - Infrastructure
+"Riot Platforms, Inc.",RIOT,13.855,5148844784,Financial Services,Financial - Capital Markets
+Walmart Inc.,WMT,115.41,920146767956,Consumer Defensive,Discount Stores
+Target Corporation,TGT,95.805,43533709129,Consumer Defensive,Discount Stores
+Toyota Motor Corporation,TM,216.05,281586272123,Consumer Cyclical,Auto - Manufacturers
+Bank of America Corporation,BAC,55.24,403390335709,Financial Services,Banks - Diversified
+"The Goldman Sachs Group, Inc.",GS,888.5,278740239547,Financial Services,Financial - Capital Markets
+JPMorgan Chase & Co.,JPM,317.46,864209388171,Financial Services,Banks - Diversified
+"Salesforce, Inc.",CRM,260.61,249140772812,Technology,Software - Application
+Infosys Limited,INFY,17.96,74473739387,Technology,Information Technology Services
+"Nintendo Co., Ltd.",NTDOY,17.86,83174003765,Technology,Electronic Gaming & Multimedia

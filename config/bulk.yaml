@@ -44,15 +44,23 @@
 
 "ohclv_root" : "data/historic/ohclv_historic"
 
+"ohclv_daily_root" : "data/daily/ohclv"
+
 "meta_data_root" : "data/historic/meta_data_historic"
+
+"meta_data_daily_root" : "data/daily/meta_daily"
 
 "macro_data_root" : "data/historic/macro_data_historic"
 
 "exchange_rate_root" : "data/historic/exchange_data_historic"
 
+"exchange_rate_daily_root" : "data/daily/exchange_daily_data"
+
 "fmp_end_point" : "https://financialmodelingprep.com/stable/profile?symbol="
 
 "frank_exchange_end_point" : "https://api.frankfurter.dev/v1/{start_date}..?base=USD&symbols=INR"
+
+"frank_exchange_latest_endpoint" : "https://api.frankfurter.dev/v1/latest?base=USD&symbols=INR"
 
 "macro_variables" :
   - "countryname"

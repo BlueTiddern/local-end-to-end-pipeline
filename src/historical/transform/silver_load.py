@@ -24,6 +24,8 @@ def silver_load():
     # start time
     runtime_start = dt.datetime.now()
 
+    insert_ts = str(dt.date.today())
+
     # config variables
     bulk_config = load_yml(args.bulk)
     # initializing the config variables
@@ -54,7 +56,7 @@ def silver_load():
                 logger.info("ohclv_silver table truncated, starting the load")
                 conn.execute(text(f"""
                     
-                    INSERT INTO {dbname}.ohclv_silver (ticker,date,open,high,low,close,volume) 
+                    INSERT INTO {dbname}.ohclv_silver (ticker,date,open,high,low,close,volume,insert_datetime) 
                     SELECT 
                         ticker,
                         date,
@@ -62,7 +64,8 @@ def silver_load():
                         high,
                         low,
                         close,
-                        volume
+                        volume,
+                        '{insert_ts}'
                     FROM {dbname}.ohclv_clean
             
                 """))
@@ -129,12 +132,13 @@ def silver_load():
                 conn.execute(text(f"TRUNCATE TABLE {dbname}.exchange_rates_silver"))
                 logger.info("exchange_rates_silver table truncated, starting the load")
                 conn.execute(text(f"""INSERT INTO {dbname}.exchange_rates_silver (
-                date, inr_rate, usd_amount
+                date, inr_rate, usd_amount,insert_datetime
                 )
                 SELECT
                     date,
                     inr_rate,
-                    usd_amount
+                    usd_amount,
+                    '{insert_ts}'
                 FROM {dbname}.exchange_rates_clean
                 """))
                 logger.info("exchange_rates_silver loaded successfully....")

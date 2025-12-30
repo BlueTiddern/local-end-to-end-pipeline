@@ -79,6 +79,18 @@ def setup_logging():
         handler.setFormatter(formatter)
         daily_exec_logger.addHandler(handler)
 
+    # <--- validation block for daily load data validation --->
+    daily_val_logger = logging.getLogger('daily-validation-execution')
+    daily_val_logger.setLevel(logging.INFO)
+    daily_val_logger.propagate = False
+
+    if not daily_val_logger.handlers:
+        handler = logging.FileHandler(f"logs/validations/bronze_daily/daily_validation_{run_ts}.log")
+        handler.setLevel(logging.INFO)
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        handler.setFormatter(formatter)
+        daily_val_logger.addHandler(handler)
+
 
 
 

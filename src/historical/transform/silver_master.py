@@ -101,7 +101,9 @@ def silver_ddl():
                         high DECIMAL(6,2) NOT NULL,
                         low DECIMAL(6,2) NOT NULL,
                         close DECIMAL(6,2) NOT NULL,
-                        volume BIGINT NOT NULL
+                        volume BIGINT NOT NULL,
+                        insert_datetime DATE NOT NULL,
+                        UNIQUE KEY uq_ticker_date (ticker, date)
             
                     )
                 """))
@@ -223,7 +225,9 @@ def silver_ddl():
                     rate_id INT AUTO_INCREMENT PRIMARY KEY,
                     date DATE NOT NULL,
                     inr_rate FLOAT NOT NULL,
-                    usd_amount SMALLINT NOT NULL
+                    usd_amount SMALLINT NOT NULL,
+                    insert_datetime DATE NOT NULL,
+                    UNIQUE KEY uq_exchange_rate (date)
                                        
                     )
                 

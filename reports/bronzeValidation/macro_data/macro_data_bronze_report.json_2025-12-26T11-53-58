@@ -1,0 +1,349 @@
+{
+    "success": true,
+    "results": [
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "batch_id": "macro_bronze-macro_bronze",
+                    "column": "country_id"
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1341,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": []
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_value_lengths_to_be_between",
+                "kwargs": {
+                    "batch_id": "macro_bronze-macro_bronze",
+                    "column": "country_id",
+                    "min_value": 2,
+                    "max_value": 10
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1341,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "batch_id": "macro_bronze-macro_bronze",
+                    "column": "year"
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1341,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": []
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "batch_id": "macro_bronze-macro_bronze",
+                    "column": "year",
+                    "min_value": 2020.0,
+                    "max_value": 2025.0
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1341,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "batch_id": "macro_bronze-macro_bronze",
+                    "column": "country_name"
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1341,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": []
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_value_lengths_to_be_between",
+                "kwargs": {
+                    "batch_id": "macro_bronze-macro_bronze",
+                    "column": "country_name",
+                    "min_value": 1,
+                    "max_value": 200
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1341,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_not_match_regex",
+                "kwargs": {
+                    "batch_id": "macro_bronze-macro_bronze",
+                    "column": "country_name",
+                    "regex": "^\\s*$"
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1341,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "batch_id": "macro_bronze-macro_bronze",
+                    "column": "nominal_gdp",
+                    "min_value": 0.0
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1341,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "batch_id": "macro_bronze-macro_bronze",
+                    "column": "real_gdp",
+                    "min_value": 0.0
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1341,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "batch_id": "macro_bronze-macro_bronze",
+                    "column": "inflation",
+                    "min_value": -50.0,
+                    "max_value": 20000.0
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1341,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "batch_id": "macro_bronze-macro_bronze",
+                    "column": "unemployment",
+                    "min_value": 0.0,
+                    "max_value": 100.0
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1341,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        }
+    ],
+    "suite_name": "bronze_macro_suit",
+    "suite_parameters": {},
+    "statistics": {
+        "evaluated_expectations": 11,
+        "successful_expectations": 11,
+        "unsuccessful_expectations": 0,
+        "success_percent": 100.0
+    },
+    "meta": {
+        "great_expectations_version": "1.9.1",
+        "expectation_suite_name": "bronze_macro_suit",
+        "run_id": {
+            "run_name": null,
+            "run_time": "2025-12-26T11:53:58.696902-06:00"
+        },
+        "batch_spec": {
+            "type": "table",
+            "data_asset_name": "macro_bronze",
+            "table_name": "bronze.macro_economic_data_bronze",
+            "schema_name": null,
+            "batch_identifiers": {}
+        },
+        "batch_markers": {
+            "ge_load_time": "20251226T175358.335107Z"
+        },
+        "active_batch_definition": {
+            "datasource_name": "macro_bronze",
+            "data_connector_name": "fluent",
+            "data_asset_name": "macro_bronze",
+            "batch_identifiers": {}
+        },
+        "validation_time": "20251226T175358.696862Z",
+        "checkpoint_name": null
+    },
+    "id": null
+}

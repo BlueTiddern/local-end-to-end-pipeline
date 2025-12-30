@@ -1,0 +1,231 @@
+{
+    "success": true,
+    "results": [
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "batch_id": "exchange_rate_bronze-exchange_rate_bronze",
+                    "column": "date"
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1536,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": []
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "batch_id": "exchange_rate_bronze-exchange_rate_bronze",
+                    "column": "date",
+                    "min_value": "2019-12-01T00:00:00",
+                    "max_value": "2025-12-26T11:51:57.538185"
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1536,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "batch_id": "exchange_rate_bronze-exchange_rate_bronze",
+                    "column": "inr_rate"
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1536,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": []
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "batch_id": "exchange_rate_bronze-exchange_rate_bronze",
+                    "column": "inr_rate",
+                    "min_value": 0.0,
+                    "strict_min": true
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1536,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_match_regex",
+                "kwargs": {
+                    "batch_id": "exchange_rate_bronze-exchange_rate_bronze",
+                    "column": "inr_rate",
+                    "regex": "^\\d+(\\.\\d{1,3})?$"
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1536,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "batch_id": "exchange_rate_bronze-exchange_rate_bronze",
+                    "column": "usd_amount"
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1536,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": []
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "batch_id": "exchange_rate_bronze-exchange_rate_bronze",
+                    "column": "usd_amount",
+                    "min_value": 0.0,
+                    "strict_min": true
+                },
+                "meta": {},
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 1536,
+                "unexpected_count": 0.0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0.0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        }
+    ],
+    "suite_name": "bronze_exchange_suit",
+    "suite_parameters": {},
+    "statistics": {
+        "evaluated_expectations": 7,
+        "successful_expectations": 7,
+        "unsuccessful_expectations": 0,
+        "success_percent": 100.0
+    },
+    "meta": {
+        "great_expectations_version": "1.9.1",
+        "expectation_suite_name": "bronze_exchange_suit",
+        "run_id": {
+            "run_name": null,
+            "run_time": "2025-12-26T11:51:57.721091-06:00"
+        },
+        "batch_spec": {
+            "type": "table",
+            "data_asset_name": "exchange_rate_bronze",
+            "table_name": "bronze.exchange_rates_bronze",
+            "schema_name": null,
+            "batch_identifiers": {}
+        },
+        "batch_markers": {
+            "ge_load_time": "20251226T175157.507596Z"
+        },
+        "active_batch_definition": {
+            "datasource_name": "exchange_rate_bronze",
+            "data_connector_name": "fluent",
+            "data_asset_name": "exchange_rate_bronze",
+            "batch_identifiers": {}
+        },
+        "validation_time": "20251226T175157.721044Z",
+        "checkpoint_name": null
+    },
+    "id": null
+}

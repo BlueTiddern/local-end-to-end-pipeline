@@ -9,3 +9,6 @@ logs/
 
 # Ignore test file
 test.py
+
+# Ignoring data files
+data/

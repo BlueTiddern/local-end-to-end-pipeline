@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 import argparse
 import pandas as pd
-from ...utils import mysql_connect_create_db,get_engine_session, make_dir, load_yml
+from ...utils import mysql_connect_create_db,get_engine_session, load_yml
 from ...logger import setup_logging
 import logging
 import datetime as dt

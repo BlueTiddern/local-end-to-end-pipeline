@@ -26,20 +26,25 @@ import yfinance as yf
 #
 ##########################
 
-def daily_extr():
+def daily_extr( bulk: str = "config/bulk.yaml", dagster_run_id: str | None = None ):
 
     #loading environment variables
     load_dotenv(dotenv_path='.env')
     fmp_key = os.getenv('FMP_KEY')
 
     # setup to load the arguments from config
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--bulk",default = 'config/bulk.yaml')
-    args = parser.parse_args()
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument("--bulk",default = 'config/bulk.yaml')
+    # args = parser.parse_args()
 
     # logging configuration call
     setup_logging()
     logger = logging.getLogger('daily-execution')
+
+    # logging Dagster run id and timestamp - correlation log
+    if dagster_run_id:
+        logger.info(f"**dagster_run_id** : {dagster_run_id} -> starting daily extract orchestration")
+        logger.info(f"**dagster_log_ts** : {dt.datetime.now().isoformat()} -> starting daily extract marking")
 
     # execution encompassing
     try:
@@ -53,7 +58,7 @@ def daily_extr():
         logger.info("Starting the daily extract execution....")
 
         # config for loading
-        bulk_config = load_yml(args.bulk)
+        bulk_config = load_yml(bulk)
 
         # config values
         ticker_list = bulk_config['tickers'] # list of the select company stock tickers
@@ -205,6 +210,9 @@ def daily_extr():
         logger.error(f"There is an error while processing the daily load : {e}")
 
 if __name__ == "__main__":
-    daily_extr()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--bulk", default="config/bulk.yaml")
+    args = parser.parse_args()
+    daily_extr(bulk=args.bulk)
 
 

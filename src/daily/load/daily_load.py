@@ -11,19 +11,19 @@ from pathlib import Path
 
 # main execution block
 
-def daily_load():
+def daily_load( bulk: str = "config/bulk.yaml", dagster_run_id: str | None = None ):
 
     # loading the database password
     load_dotenv(dotenv_path='.env')
     db_pass = os.getenv("DB_PASS")
 
     # argument parsing - loading the configuration
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--bulk", default = 'config/bulk.yaml')
-    args = parser.parse_args()
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument("--bulk", default = 'config/bulk.yaml')
+    # args = parser.parse_args()
 
     # loading the arguments
-    bulk_config = load_yml(args.bulk)
+    bulk_config = load_yml(bulk)
     ohclv_root = Path(bulk_config['ohclv_daily_root'])
     exchange_root = Path(bulk_config['exchange_rate_daily_root'])
     db_name = bulk_config['dbname'][0]
@@ -34,6 +34,11 @@ def daily_load():
     # logging configuration
     setup_logging()
     logger = logging.getLogger('daily-execution')
+
+    # logging Dagster run id and timestamp - correlation log
+    if dagster_run_id:
+        logger.info(f"**dagster_run_id** : {dagster_run_id} -> starting daily load orchestration")
+        logger.info(f"**dagster_log_ts** : {dt.datetime.now().isoformat()} -> starting daily load marking")
 
     # execution implementation block
     try:
@@ -331,7 +336,10 @@ def daily_load():
         logger.exception(f"Error while executing the daily load process : {e}")
 
 if __name__ == "__main__":
-    daily_load()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--bulk", default="config/bulk.yaml")
+    args = parser.parse_args()
+    daily_load(bulk=args.bulk)
 
 
 

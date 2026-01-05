@@ -10,19 +10,19 @@ from sqlalchemy import text
 
 # main execution block
 
-def daily_transform():
+def daily_transform( bulk: str = "config/bulk.yaml", dagster_run_id: str | None = None ):
 
     # loading the database password
     load_dotenv(dotenv_path='.env')
     db_pass = os.getenv("DB_PASS")
 
     # argument parsing - loading the configuration
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--bulk", default = 'config/bulk.yaml')
-    args = parser.parse_args()
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument("--bulk", default = 'config/bulk.yaml')
+    # args = parser.parse_args()
 
     # loading the arguments
-    bulk_config = load_yml(args.bulk)
+    bulk_config = load_yml(bulk)
     db_name = bulk_config['dbname'][0]
     db_name_silver = bulk_config['dbname'][1]
     user_name = bulk_config['user_name']
@@ -32,6 +32,11 @@ def daily_transform():
     # logging configuration
     setup_logging()
     logger = logging.getLogger('daily-execution')
+
+    # logging Dagster run id and timestamp - correlation log
+    if dagster_run_id:
+        logger.info(f"**dagster_run_id** : {dagster_run_id} -> starting daily transform orchestration")
+        logger.info(f"**dagster_log_ts** : {dt.datetime.now().isoformat()} -> starting daily transform marking")
 
     try:
         # enclosing block to catch the errors
@@ -160,4 +165,7 @@ def daily_transform():
         logger.exception(f"Error while processing the transformation layer : {e}")
 
 if __name__ == "__main__":
-    daily_transform()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--bulk", default="config/bulk.yaml")
+    args = parser.parse_args()
+    daily_transform(bulk=args.bulk)

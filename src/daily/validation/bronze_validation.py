@@ -14,15 +14,15 @@ from ...logger import setup_logging
 
 # main execution block
 
-def daily_validation():
+def daily_validation( bulk: str = "config/bulk.yaml", dagster_run_id: str | None = None ):
 
     # parsing the arguments from configuration
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--bulk',default='config/bulk.yaml')
-    args = parser.parse_args()
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument('--bulk',default='config/bulk.yaml')
+    # args = parser.parse_args()
 
     # calling the parser
-    bulk_config = load_yml(args.bulk)
+    bulk_config = load_yml(bulk)
 
     # loading the configuration options
     db_name = bulk_config['dbname'][0]
@@ -37,6 +37,10 @@ def daily_validation():
     # setting up the logging configuration
     setup_logging()
     logger = logging.getLogger('daily-validation-execution')
+
+    if dagster_run_id:
+        logger.info(f"**dagster_run_id** : {dagster_run_id} -> starting daily validation orchestration")
+        logger.info(f"**dagster_log_ts** : {dt.datetime.now().isoformat()} -> starting daily validation marking")
 
     logger.info("Starting daily validation for the tables loaded....")
 
@@ -265,7 +269,10 @@ def daily_validation():
         logger.exception("Unexpected error while running great expectations....")
 
 if __name__ == '__main__':
-    daily_validation()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--bulk", default="config/bulk.yaml")
+    args = parser.parse_args()
+    daily_validation(bulk=args.bulk)
 
 
 

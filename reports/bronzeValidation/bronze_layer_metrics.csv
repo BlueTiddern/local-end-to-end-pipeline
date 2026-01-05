@@ -1,5 +1,5 @@
 table_name,total_records,total_null_values
-ohclv_bronze,32760,0.0
+ohclv_bronze,32826,0.0
 company_meta_data_bronze,22,0.0
-macro_economic_data_bronze,1341,0.0
-exchange_rates_bronze,1538,0.0
+macro_economic_data_bronze,1536,0.0
+exchange_rates_bronze,1540,0.0

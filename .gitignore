@@ -12,3 +12,15 @@ test.py
 
 # Ignoring data files
 data/
+
+# Dagster temp / local storage
+.tmp_dagster_home_*/
+
+# Python caches / venv
+__pycache__/
+*.py[cod]
+
+# OS/editor junk
+.DS_Store
+.idea/
+.vscode/
